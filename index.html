@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="conatainer">
+    <div class="navgation">
+        <ul>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-apple"></i></span>
+                <span class="title"><h2>Brand Name</h2></span></a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-house-fill"></i></span>
+                <span class="title">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-people-fill"></i></span>
+                <span class="title">Costomers</span></a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-chat-fill"></i></span>
+                <span class="title">Massage</span></a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-question-circle-fill"></i></span>
+                <span class="title">Help</span></a>
+            </li>
+             <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-gear-fill"></i></span>
+                <span class="title">Setting</span></a>
+            </li>
+             <li>
+                <a href="#">
+                <span class="icon"><i class="bi bi-lock-fill"></i></span>
+                <span class="title">Password</span></a>
+           </li>
+           <li>
+            <a href="#">
+                <span class="icon"><i class="bi bi-box-arrow-in-right"></i></span>
+                <span class="title">Sign out</span></a>
+        </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="togglemenu()"><i class="bi bi-list"></i></div>
+            <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here"> <i class="bi bi-search"></i>
+                    </label>
+            </div>
+            <div class="user">
+                <img src="user9.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="numbers">1,042</div>
+                    <div class="cardName">Daily Views</div>
+                </div>
+                <div class="iconBox">
+                    <i class="bi bi-eye-fill"></i>  
+                
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">80</div> 
+                    <div class="cardName">Sales</div>
+                    
+                </div>
+                <div class="iconBox">
+                    <i class="bi bi-cart4"></i> 
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">200</div>
+                    <div class="cardName">Comments</div>
+                </div>
+                <div class="iconBox">
+                    <i class="bi bi-chat-fill"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">$6,042</div>
+                    <div class="cardName">Earning</div>
+                </div>
+                <div class="iconBox">
+                    <i class="bi bi-currency-dollar"></i>
+                </div>
+            </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                     <thead>
+                        <tr>
+                        <td>Name</td>
+                              <td>Price</td>
+                              <td>Payment</td>
+                              <td>Status</td>
+                       </tr>   
+                     </thead>
+                     <tr>
+                        <td>Start Refrigrator</td>
+                        <td>$1200</td>
+                        <td>Paid  </td>
+                            <td><span class="status delivered">Delivered</span></td>
+                      
+                     </tr>
+                     <tr>
+                        <td>Window Coolers</td>
+                        <td>$110</td>
+                        <td>Due </td>
+                            <td><span class="status Pending">Pending</span></td>
+                       
+                     </tr>
+                     <tr>
+                        <td>Speakers</td>
+                        <td>$620</td>
+                        <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        
+                     </tr>
+                     <tr>
+                        <td>Hp Laptop</td>
+                        <td>$6000</td>
+                        <td>Due</td> 
+                            <td><span class="status inprogress">In Progress</span></td>
+                    </tr>
+                    <tr>
+                        <td>Start Refrigrator</td>
+                        <td>$1200</td>
+                        <td>Paid  </td>
+                            <td><span class="status delivered">Delivered</span></td>
+                      
+                     </tr>
+                     <tr>
+                        <td>Window Coolers</td>
+                        <td>$110</td>
+                        <td>Due </td>
+                            <td><span class="status Pending">Pending</span></td>
+                     </tr>
+                     <tr>
+                        <td>Speakers</td>
+                        <td>$620</td>
+                        <td>Paid</td>
+                         <td><span class="status return">Return</span></td>
+                     </tr>
+                     <tr>
+                        <td>Hp Laptop</td>
+                        <td>$6000</td>
+                        <td>Due</td> 
+                         <td><span class="status inprogress">In Progress</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apple Watch</td>
+                        <td>$680</td>
+                        <td>Paid</td> 
+                         <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user9.jpg" alt=""></div></td>
+                                <td><h4>Alam <br><span>India</span></h4></td>
+                            </tr> 
+                            <tr>
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user1.jpg" alt=""></div></td>
+                                <td><h4>Devid <br><span>Italy</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="65px"><div class="imgBox"><img src="user5.jpg" alt=""></div></td>
+                                <td><h4>Anita<br><span>India</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user3.jpg" alt=""></div></td>
+                                <td><h4>Masi <br><span>USA</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user6.jpg" alt=""></div></td>
+                                <td><h4>Diana <br><span>Canada</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user2.jpg" alt=""></div></td>
+                                <td><h4>Rohit <br><span>India</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user7.jpg" alt=""></div></td>
+                                <td><h4>Lara<br><span>spain</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="60px"> <div class="imgBox"><img src="user8.jpg" alt=""></div></td>
+                                <td><h4>Amelia<br><span>Malaysia</span></h4></td>
+                            </tr> 
+                            <tr>
+                                <td width="62px"> <div class="imgBox"><img src="user4.jpg" alt=""></div></td>
+                                <td><h4>Mohamad<br><span>India</span></h4></td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+    </div>
+</div>
+     <script src="app.js"></script>
+</body>
+</html>
